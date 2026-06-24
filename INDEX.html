@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Typography</title>
+        <style>
+            body{
+                background-image: linear-gradient(to bottom,rgb(225, 73, 98),lightpink,white);
+                background-repeat: no-repeat;
+                font-family: Helvetica;
+            }
+            .headers{
+                text-transform: uppercase;
+            }
+            #power{
+                font-weight: bold;
+            }
+            .weakness{
+                text-decoration: line-through;
+            }
+            .batch{
+                transform: rotate(15deg);
+            }
+            .circle{
+                height: 100px;
+                width: 100px;
+                border-radius: 50px;
+                animation: colorchange 5s infinite;
+            }
+            @keyframes colorchange {
+                0%{background-color: aliceblue;}
+
+                25%{background-color: rgb(228, 72, 98);}
+
+                50%{background-color: lightpink;}
+            }
+        </style>
     </head>
     <body>
-    <form>
-            <fieldset>
-                <legend><b>Profile</b></legend>
-                <input type="Name" id="name" placeholder="Name"><br>
-                <input tyoe="name" id="name" placeholder="Father name"><br>
-                <input type="email" id="email" placeholder="email"><br>
-                <input type="Passwword" id="pass" placeholder="Password"><br>
-                <input type="date" id="date" placeholder="Birthday"><br>
-                <input type="number" id="number" placeholder="Phone Number"><br>
-                <input type="text" id="address" placeholder="Address"><br>
-                <input type="Blood" id="Blood" placeholder="Blood type"><br>
-                <legend>Gender</legend>
-                <input type="radio" name="Gender" value="m">M<br>
-                <input type="radio" name="Gender" value="f">F<br>
-                <legend>City</legend>
-                <input type="checkbox">Islamabad<br>
-                <input type="checkbox">Lahore<br>
-                <input type="checkbox">Faislabad<br>
-                <select>
-                    <option value="coding">Coding</option>
-                    <option value="Physics">Physics</option>
-                    <option value="Maths">Maths</option>
-                </select><br>
-                <input type="submit" value="Submit">    
+        <h1 class="headers">Thunder Kid</h1>
+        <p id="power">The most powerful kid</p>
+        <h2 class="headers">Power</h2>
+        <p>super speed</p>
+        <h2 class="headers">Weakness</h2>
+        <p class="weakness">brocoli</p>
+        <p class="batch">Top hero</p>
+        <div class="circle"></div>
 
-            </fieldset>
-            
-        
-        </form>
     </body>
 </html>
