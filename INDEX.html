@@ -1,49 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Typography</title>
+        <title>MY Weather App webpage</title>
         <style>
-            body{
-                background-image: linear-gradient(to bottom,rgb(225, 73, 98),lightpink,white);
-                background-repeat: no-repeat;
-                font-family: Helvetica;
-            }
-            .headers{
-                text-transform: uppercase;
-            }
-            #power{
-                font-weight: bold;
-            }
-            .weakness{
-                text-decoration: line-through;
-            }
-            .batch{
-                transform: rotate(15deg);
-            }
-            .circle{
-                height: 100px;
-                width: 100px;
-                border-radius: 50px;
-                animation: colorchange 5s infinite;
-            }
-            @keyframes colorchange {
-                0%{background-color: aliceblue;}
-
-                25%{background-color: rgb(228, 72, 98);}
-
-                50%{background-color: lightpink;}
-            }
-        </style>
+            /* Universal selector :apply basic settings to full page*/
+            *{box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;}
+            body
+        {min-height: 1000px;
+         background-color:skyblue                                                ;
+         background-image: linear-gradient(to bottom, skyblue,rgb(151, 188, 200),white);
+        font-family: Arial, Helvetica, sans-serif;}
+        .day{border:1px solid;
+    font-size: 30px;}
+        .details{
+        color: aliceblue;}
+        .temperature{color: white;
+        text-align: center;
+    font-size:50px;}
+    .icon{color:gold;
+    font-size: 40px;}
+         </style>
     </head>
     <body>
-        <h1 class="headers">Thunder Kid</h1>
-        <p id="power">The most powerful kid</p>
-        <h2 class="headers">Power</h2>
-        <p>super speed</p>
-        <h2 class="headers">Weakness</h2>
-        <p class="weakness">brocoli</p>
-        <p class="batch">Top hero</p>
-        <div class="circle"></div>
+    
+            <h1>Weather forcast</h1>
+            <p id="">check weather and make your day better</p>
+                <p class="details">City:Islamabad</p>
+            
+                <p class="details">Humidity:62%</p>
+                <p class="details">wind speed:12km/h</p>
+                <p class="icon">☀sunny</p>
+                <p class="temperature">40C</p>
 
+                </div>
+                <h2>Weekly forcast</h2>
+                <div class="Forcat-section">
+                    <h3>Next five days</h3>
+                <p class="day">Monday:🌧Rainy:16C</p>
+                <P class="day">Tuesday:☁cloudy:19C</P>
+                <p class="day">Wednesday:☁cloudy:20C</p>
+                <p class="day">Thursday:☀sunny:39C</p>
+                <p class="day">Friday:☀sunny:41C</p>
+            
+            </div>
+
+    
+            
+        
+        
     </body>
 </html>
