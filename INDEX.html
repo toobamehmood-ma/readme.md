@@ -1,52 +1,85 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>MY Weather App webpage</title>
+        <title></title>
         <style>
-            *{box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;}
             body
-        {min-height: 1000px;
-         background-color:skyblue                                                ;
-         background-image: linear-gradient(to bottom, skyblue,rgb(151, 188, 200),white);
-        font-family: Arial, Helvetica, sans-serif;}
-        .day{border:1px solid;
-    font-size: 30px;}
-        .details{
-        color: aliceblue;}
-        .temperature{color: white;
-        text-align: center;
-    font-size:50px;}
-    .icon{color:gold;
-    font-size: 40px;}
-         </style>
+    
+        
+    {background-color:rgb(13, 58,69,1);
+    color: aliceblue;
+text-align: center;
+ }
+    *{box-sizing: border-box;}
+    .resturant{
+        width: 600px;
+        border: 3px solid;
+        border-radius: 15px;
+        background-color: #ffffff;
+        box-shadow: 0 0 20px;
+    }
+    
+
+
+
+        .menu{
+            color:rgba(98, 7, 7, 0.853);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+            font-size:45px;
+            text-shadow:2px 2px 2px;
+        
+            
+        }
+       .main{text-transform:capitali;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 30px;}
+.dinner{color: white;
+text-transform: capitalize;
+font-size: 15px;}
+.offer{text-wrap: unset;
+       transform: rotate(-2deg);
+
+box-shadow:0 0 12px #070307 ;
+background-color:gray; 
+text-transform: uppercase;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: black;
+font-size: 20px;
+font-weight: 900;
+}
+
+
+        </style>
     </head>
     <body>
+      <div> <h1 class="menu">Restaurant Menu</h1></div>
     
-            <h1>Weather forcast</h1>
-            <p id="">check weather and make your day better</p>
-                <p class="details">City:Islamabad</p>
-            
-                <p class="details">Humidity:62%</p>
-                <p class="details">wind speed:12km/h</p>
-                <p class="icon">☀sunny</p>
-                <p class="temperature">40C</p>
+     <div><p class="main">Main course</p>             
+      <p class="dinner">Mozzarella Sticks</p>
+      <p class="dinner">French Fries </p>
+      <p class="dinner">Chicken Fingers </p>
+      <p class="dinner"> Potato Wedges</p>
+      <p class="dinner">Onion Rings </p></div>
+      
+      <div><h2 class="main">snacks</h2>
+      <p class="dinner"> Big burger</p>
+      <p class="dinner"> cheese burger</p>
+      <p class="dinner">Beef patty burger </p>
+      <p class="dinner">chicken burger </p></div>
 
-                </div>
-                <h2>Weekly forcast</h2>
-                <div class="Forcat-section">
-                    <h3>Next five days</h3>
-                <p class="day">Monday:🌧Rainy:16C</p>
-                <P class="day">Tuesday:☁cloudy:19C</P>
-                <p class="day">Wednesday:☁cloudy:20C</p>
-                <p class="day">Thursday:☀sunny:39C</p>
-                <p class="day">Friday:☀sunny:41C</p>
-            
-            </div>
-
+      <div> <h2 class="main">Drinks</h2>
+      <p class="dinner">Milk shakes </p>
+      <p class="dinner"> Lemon soda</p>
+       <p class="dinner">iced tea </p>
+       <p class="dinner"> coffee</p></div>
+       <div class="offer">
+        <h2>special offer</h2>
+        20% discount on Monday
+       </div>
     
-            
-        
-        
+    
+      
+    
     </body>
 </html>
