@@ -1,82 +1,166 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My School Club Website</title>
+        <title>Zoo Rescue Tracker </title>
         <style>
             body{
-                background-image:radial-gradient( circle,rgb(27, 122, 160),skyblue,white);
-                background-repeat: no-repeat;
+                background-color:rgb(191, 226, 238);
+                margin: 0;
+                padding: 20px;
                 text-align: center;
             }
-            
-        </style>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    </head>
-    <body class="bg-light py-5">
-        <h1 class="text-primary text-center">Welcome to Our School Club!</h1>
-        <p class="text-center">This is a simple website for our school club.</p>
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card text-center h-100 border-danger ">
-                        <div class="card-body">
-                            <h3 class=" card-title text-primary">Club Activities</h3>
-                            <p class="card-text">We organize various activities and events for our members.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card text-center h-100 border-danger ">
-                        <div class="card-body">
-                            <h3 class=" card-title text-primary">Dance Club</h3>
-                            <p class="card-text">Join our dance club and learn new dance styles.in this club you will have the opportunity to perform in front of an audience.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mb-3">
-                    <div class="card text-center h-100 border-danger ">
-                        <div class="card-body">
-                            <h3 class=" card-title text-primary ">Music Club</h3>
-                            <p class="card-text ">Join our music club and learn to play different musical instruments. You will also have the courage to perform in front of an audience.</p>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-3">
-                        <div class="card text-center h-100 border-danger ">
-                            <div class="card-body">
-                                <h3 class=" card-title text-primary ">Art Club</h3>
-                                <p class="card-text">By joining our art club, you can explore your creativity through various art forms. You will have the opportunity to showcase your artwork in exhibitions.</p>
-                            </div>
-                            </div>
-                    </div>
+            *{
+                box-sizing: border-box;
+            }
+            .card{
+                background-color:silver;
+                
+                width: 300px;
+                padding: 20px;
+                margin: 20px;
+                border-radius: 10px;
+                box-shadow:  4px 8px rgba(0, 0, 0, 0.2);
+                border: 1px solid #0d0d0d;
+                position: relative;
+                                
+            }
+                .zoo{
+                    color: #261c1c;
+                    font-size: 50px;
+                    position: sticky;
+                    top:10px;
                     
-                            <div class="col-12 col-md-6 col-lg-4 mb-3">
-                                <div class="card text-center h-100 border-danger ">
-                                    <div class="card-body">
-                                        <h3 class=" card-title text-primary">Sports Club</h3>
-                                        <p class="card-text ">Join our sports club and participate in various sports activities. by joining, you can improve your physical fitness and develop teamwork skills.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-3">
-                                <div class="card text-center h-100 border-danger ">
-                                    <div class="card-body">
-                                        <h3 class=" card-title text-primary">Volunteer Club</h3>
-                                        <p class="card-text ">Join our volunteer club and make a positive impact in our community. You will have the opportunity to participate in various volunteer activities and help those in need.</p>
-                            </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6 col-lg-4 mb-3">
-                                <div class="card text-center h-100 border-danger">
-                                <div class="card-body">
-                                        <h3 class=" card-title text-primary">Upcoming Events</h3>
-                                        <p class="card-text">Check out our upcoming events and participate!</p>
-                            </div>
 
-                        </div>
-                    </div>
-                </div>
+                    
+                }
+                .animal{
+                    color: #261c1c;
+                    font-size: 20px;
+                    position: relative;
+                
+
+                }
+                .lion{
+                    color: #261c1c;
+                    font-size: 20px;
+                    position: static;
+                }
+                .tiger{
+                    color: #080707;
+                    font-size: 20px;
+                    position: relative;
+                    top: 10px;
+                    right: 20px;
+
+                }
+                .giraffe{
+                    position:relative ;
+                }
+                .zebra{
+                    position: relative;
+                }
+                .kangaroo{
+                    position:relative;
+                }
+                .panda{
+                    position: relative;
+                }
+                .koala{
+                    position: relative;
+                }
+                .crocodile{
+                    position:relative ;
+                }
+                .bear{
+                    position:relative ;
+                }
+                .button{
+                    position: absolute;
+                    top:5px;
+                    font-size: x-large;
+                    right: 10px;
+                }
+            
+
+    
+        </style>
+    </head>
+    <body>
+    <center>
+        
+        <h2 class="zoo">Zoo Rescued Card </h2>
+        <div class="card">
+        <div class="animal">
+        <img src="images.jfif" alt="Zoo Image"width=250px height=250px>
+         <p class="rescue">Animal: Elephant</p>
+         <p> Status: Rescued</p>
+         <p>location: Zoo</p>
+         </div>
+         <div class="lion">
+          
+         <img src="lion-animal-isolated-photo.jpg" alt="Zoo Image" style="width:250px; height:250px;">
+
+         <p>Animal: Lion</p>
+         <p> Status: Rescued</p>
+         <p>location: Zoo</p>
+         </div>
+         <div class="tiger">
+         <img src="images (1).jfif" alt="Zoo Image"width=250px height=250px>
+            <p>Animal: Tiger</p>
+            <p> Status: Rescued</p>
+            <p>location: Zoo</p>
             </div>
+            <div class="giraffe">
+            <img src="Giraffa_camelopardalis_reticulata_01,_flip.jpg" alt="Zoo Image"width=250px height=250px>
+            <p>Animal: Giraffe</p>
+            <p> Status: Rescued</p>
+            <p>location: Zoo</p>
+            </div>
+            <div class="zebra">
+            <img src="Plains_Zebra_Equus_quagga_cropped.jpg" alt="Zoo Image"width=250px height=250px>
+            <p>Animal: Zebra</p>
+            <p> Status: Rescued</p>
+            <p>location: Zoo</p>
+            </div>
+            <div class="kangaroo">
+            <img src="images (2).jfif" alt="Zoo Image"width=250px height=250px>
+            <p>Animal: Kangaroo</p>
+            <p> Status: Rescued</p>
+            <p>location: Zoo</p>
+            </div>
+            <div class="panda">
+            <img src="images (3).jfif" alt="Zoo Image"width=250px height=250px>
+            <p>Animal: Panda</p>
+            <p> Status: Rescued</p>
+            <p>location: Zoo</p>
+            </div>
+            <div class="koala">
+            <img src="images (4).jfif" alt="Zoo Image"width=250px height=250px>
+            <p>Animal: Koala</p>
+            <p> Status: Rescued</p>
+            <p>location: Zoo</p>
+            </div>
+            
+                    <div class="crocodile">
+                <img src="crocodile-Nile-swath-one-sub-Saharan-Africa-Madagascar.webp" alt="Zoo Image"width=250px height=250px>
+                <p>Animal: Crocodile</p>
+               <p> Status: Rescued</p>
+               <p>location: Zoo</p>
+               </div>
+               <div class="bear">
+               <img src="images (5).jfif" alt="Zoo Image"width=250px height=250px>
+               <p>Animal: Bear</p>  
+               <p> Status: Rescued</p>
+               <p>location: Zoo</p> 
+               </div>
         </div>
+        <button class="button"><a href="">track animal</a></button>
+        
+    </center>
+
+
+
+
+        
     </body>
 </html>
