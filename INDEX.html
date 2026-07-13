@@ -1,166 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Zoo Rescue Tracker </title>
-        <style>
-            body{
-                background-color:rgb(191, 226, 238);
-                margin: 0;
-                padding: 20px;
-                text-align: center;
-            }
-            *{
-                box-sizing: border-box;
-            }
-            .card{
-                background-color:silver;
-                
-                width: 300px;
-                padding: 20px;
-                margin: 20px;
-                border-radius: 10px;
-                box-shadow:  4px 8px rgba(0, 0, 0, 0.2);
-                border: 1px solid #0d0d0d;
-                position: relative;
-                                
-            }
-                .zoo{
-                    color: #261c1c;
-                    font-size: 50px;
-                    position: sticky;
-                    top:10px;
-                    
+<head>
+    <title>My Food Diary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body class="bg-light text-center p-5">
+    <div>
+    <p class="display-1">My food diary</p>
+    <p class="display-2">My top Dishes</p>
+    <p class="display-3">Fun Food Fact</p>
+    <p class="display-4">Food Guide <small class="display-6" >by tooba</small> </p>
+    </div>
+    <hr class="border-danger my-4">
+    <h1 class="text-danger">Did you know</h1>
+     <p>Pizza is the <mark>most popular</mark> food order by the kids around the world</p>
+     <p >It takes 30 minutes to bake a perfect homemade pizza </p>
+     <hr class="border-warning">
+     <p>Cooking style</p>
+     <p> My favourite way to cook with a family is a good old <abbr title="Barbeque" class="text-danger">BBQ</abbr> on sunny day</p>
+     <hr class="border-success">
+    <p class= text-danger>Food Quote</p>
+    <blockquote>
+        <p>First we eat, than we do everything else!</p>
+        <footer class="blockquote footer"> By Alexendar The Great.</footer>
+    </blockquote>
 
-                    
-                }
-                .animal{
-                    color: #261c1c;
-                    font-size: 20px;
-                    position: relative;
-                
-
-                }
-                .lion{
-                    color: #261c1c;
-                    font-size: 20px;
-                    position: static;
-                }
-                .tiger{
-                    color: #080707;
-                    font-size: 20px;
-                    position: relative;
-                    top: 10px;
-                    right: 20px;
-
-                }
-                .giraffe{
-                    position:relative ;
-                }
-                .zebra{
-                    position: relative;
-                }
-                .kangaroo{
-                    position:relative;
-                }
-                .panda{
-                    position: relative;
-                }
-                .koala{
-                    position: relative;
-                }
-                .crocodile{
-                    position:relative ;
-                }
-                .bear{
-                    position:relative ;
-                }
-                .button{
-                    position: absolute;
-                    top:5px;
-                    font-size: x-large;
-                    right: 10px;
-                }
-            
-
-    
-        </style>
-    </head>
-    <body>
-    <center>
-        
-        <h2 class="zoo">Zoo Rescued Card </h2>
-        <div class="card">
-        <div class="animal">
-        <img src="images.jfif" alt="Zoo Image"width=250px height=250px>
-         <p class="rescue">Animal: Elephant</p>
-         <p> Status: Rescued</p>
-         <p>location: Zoo</p>
-         </div>
-         <div class="lion">
-          
-         <img src="lion-animal-isolated-photo.jpg" alt="Zoo Image" style="width:250px; height:250px;">
-
-         <p>Animal: Lion</p>
-         <p> Status: Rescued</p>
-         <p>location: Zoo</p>
-         </div>
-         <div class="tiger">
-         <img src="images (1).jfif" alt="Zoo Image"width=250px height=250px>
-            <p>Animal: Tiger</p>
-            <p> Status: Rescued</p>
-            <p>location: Zoo</p>
-            </div>
-            <div class="giraffe">
-            <img src="Giraffa_camelopardalis_reticulata_01,_flip.jpg" alt="Zoo Image"width=250px height=250px>
-            <p>Animal: Giraffe</p>
-            <p> Status: Rescued</p>
-            <p>location: Zoo</p>
-            </div>
-            <div class="zebra">
-            <img src="Plains_Zebra_Equus_quagga_cropped.jpg" alt="Zoo Image"width=250px height=250px>
-            <p>Animal: Zebra</p>
-            <p> Status: Rescued</p>
-            <p>location: Zoo</p>
-            </div>
-            <div class="kangaroo">
-            <img src="images (2).jfif" alt="Zoo Image"width=250px height=250px>
-            <p>Animal: Kangaroo</p>
-            <p> Status: Rescued</p>
-            <p>location: Zoo</p>
-            </div>
-            <div class="panda">
-            <img src="images (3).jfif" alt="Zoo Image"width=250px height=250px>
-            <p>Animal: Panda</p>
-            <p> Status: Rescued</p>
-            <p>location: Zoo</p>
-            </div>
-            <div class="koala">
-            <img src="images (4).jfif" alt="Zoo Image"width=250px height=250px>
-            <p>Animal: Koala</p>
-            <p> Status: Rescued</p>
-            <p>location: Zoo</p>
-            </div>
-            
-                    <div class="crocodile">
-                <img src="crocodile-Nile-swath-one-sub-Saharan-Africa-Madagascar.webp" alt="Zoo Image"width=250px height=250px>
-                <p>Animal: Crocodile</p>
-               <p> Status: Rescued</p>
-               <p>location: Zoo</p>
-               </div>
-               <div class="bear">
-               <img src="images (5).jfif" alt="Zoo Image"width=250px height=250px>
-               <p>Animal: Bear</p>  
-               <p> Status: Rescued</p>
-               <p>location: Zoo</p> 
-               </div>
-        </div>
-        <button class="button"><a href="">track animal</a></button>
-        
-    </center>
-
-
-
-
-        
-    </body>
+</body>
 </html>
