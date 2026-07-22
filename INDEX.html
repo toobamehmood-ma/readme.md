@@ -3,69 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Study Progress Dashboards</title>
+    <title>Planet Explorer</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
 </head>
-<body class="bg-light">
-    <div class="jumbotron jumbotron-fluid text-light bg-dark">
-        <div class="container">
-        <h1>My Study Progress </h1>
-        <p>Welcome to study progress dashboard where you can find my study progress before paper</p>
-        <button class="btn btn-primary">Physics</button>
-         <button class="btn btn-success">Biology</button> 
-         <button class="btn btn-warning">Chemistry</button> 
-         <button class="btn btn-danger">Maths</button>
-          <button class="btn btn-info">Urdu</button>
-           <button class="btn btn-light">Pakstudy</button>
+<body class="bg-light" >
+    <nav class="navbar navbar-expand-5m navbar-dark bg-primary justify-content-center">
+        <h1 class="navbar-brand">Planet Explorer</h1>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">home</a></li>
+            <li class="nav-item"><a class="nav-link"href="#">Planet</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1 class="text-primary">Scanning Galaxy....</h1>
+        <div class="spinner-border text-warning"> </div>
+<h2 class="text-primary">Featyred planet</h2>
+    <div class="row">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="text-primary">Earth</h3>
+                <p>Our home planet with life</p>
+                <a href="#" class="btn btn-primary">Explore</a>
+            </div>
         </div>
-        <div class="container">
-            <h2>Chapter Completed <span class="badge bg-white text-dark">6</span></h2>
-            <p>Physics <span class="badge bg-primary">6</span></p>
-         <p>Biology <span class="badge bg-success">9</span></p>
-         <p>Chemistry <span class="badge bg-warning">7</span></p>
-         <p>Maths<span class="badge bg-danger">10</span></p>
-         <p>Urdu <span class="badge bg-info">12</span></p>
-         <p>Pakstudy <span class="badge bg-white text-dark">8</span></p>
 
-         <h3>Progress</h3>
-         <p>Physics</p>
-         <div class="progress">
-            <div class="progress-bar bg-primary" style="width:70%">70%</div>
-
-         </div>
-         <p>Biology</p>
-         <div class="progress">
-            <div class="progress-bar bg-success" style="width:95%">95%</div>
-
-         </div>
-         <p>Chemistry</p>
-         <div class="progress">
-            <div class="progress-bar bg-warning" style="width:95%">95%</div>
-
-         </div>
-         <p>Maths</p>
-         <div class="progress">
-            <div class="progress-bar bg-danger" style="width:60%">60%</div>
-
-         </div>
-         <p>Urdu</p>
-         <div class="progress">
-            <div class="progress-bar bg-info" style="width:80%">80%</div>
-
-         </div>
-         <p>Pakstudy</p>
-         <div class="progress">
-            <div class="progress-bar bg-primary" style="width:100%">100%</div>
-
-         </div>
+    
+        <div class="card">
+            <div class="card-body">
+                <h3>Mars</h3>
+                  <p>The red planet</p>
+                  <a href="#" class="btn btn-danger">Explore</a>
+            </div>
         </div>
-         
-         
+    </div>
+    <h3 class="text-primary">Page</h3>
+    <ul class="pagination">
         
+        <li class="page-item mx-2">
+            <a href="">previous</a>
+        </li>
+        <li class="page-item mx-2">
+            <a href="">1</a>
+        </li>
+        <li class="page-item mx-2">
+            <a href="">2</a>
+            <li class="page-item mx-2">
+                <a href="">next</a>
+            </li>
+        </li>
+    </ul>
 
-        </div>
-
+    </div>
     
     
     
