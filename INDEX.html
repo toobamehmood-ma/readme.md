@@ -1,100 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Ocean World</title>
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>My Animal Safari</title>
+    <link rel="stylesheet" href="
+https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            position: relative;
+        }
+
+        .carousel-item {
+            height: 100px;
+            text-align: center;
+            font-weight: bold;
+            font-size: large;
+            padding-top: 20px;
+
+        }
+    </style>
 </head>
-<body class="bg-dark">
-    <nav class="navbar navbar-expand-sm navbar-dark  justify-content-center bg-primary">
-    <h1 class="navbar-brand ">My Ocean World</h1>
-    <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white" href="#">Sea animals</a>
-        </li>
-    </ul>
-    </nav>
-    <div class="container">
-        <h1 class="text-primary text-center">Exploring sea...</h1>
-        <div class="text-center">
-        <div class="spinner-border text-primary  mx-2"></div>
-        <div class="spinner-border text-success  mx-2"></div>
-        <div class="spinner-border text-warning mx-2"></div> 
-        <div class="spinner-border text-info mx-2" ></div>
+
+<body data-spy="scroll">
+    <div id="demoCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#demoCarousel" data-slide-to="0" class="active"></li>
+
+            <li data-target="#demoCarousel" data-slide-to="1"></li>
+            <li data-target="#demoCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+
+            <div class="carousel-item active bg-success">Forest</div>
+            <div class="carousel-item  bg-warning">Desset</div>
+            <div class="carousel-item bg-primary">Ocean</div>
         </div>
-        <h3 class="text-primary text-center">~Amazing Marine Life~</h3>
-        <div class="row">
-            <div class="col-md-3 col-lg-6 mb-2">
-            <div class="card ">
-                <div class="card-body">
-                    <h2 class="text-primary text-center"> Turtle</h2>
-                    <img src="image.jfif" height="150px" width="250px">
-                    <p>Sea turtles travel across <br>oceans and have lived for<br> millions of years.</p>
-                     <a href="#" class="btn btn-primary">EXPLORE</a>
-                </div>
-            </div>
-            </div>
-          <div class="col-md-3 col-lg-6 mb-2">
-        <div class="card ">
-                <div class="card-body">
-                    <h2 class="text-primary text-center">Colorful fish</h2>
-                    <img src="images (1).jfif" height="150px" width="200px">
-                    <p>Oceans are home to colorful<br>fish and amazing<br> species.</p>
-                     <a href="#" class="btn btn-primary">EXPLORE</a>
-                </div>
-        </div>
-
-            </div>
-          <div class="col-md-3 col-lg-6 mb-2">
-         <div class="card">
-                <div class="card-body">
-                    <h2 class="text-primary text-center ">Octopus</h2>
-                    <img src="images (2).jfif" height="150px" width="245px">
-                    <p>Octopuses have eight arms and<br> they can hide by changing<br> color</p>
-                     <a href="#" class="btn btn-primary">EXPLORE</a>
-                </div>
-
-            </div>
-          </div>
-    
-  <div class="col-md-3 col-lg-6 mb-2">
-         <div class="card">
-
-                <div class="card-body">
-                    <h2 class="text-primary text-center ">Dolphins</h2>
-                    <img src="images (3).jfif" height="150px"width="200px">
-                    <p>Dolphins are intelligent and <br>friendly creatures that love to <br>play in the sea</p>
-                     <a href="#" class="btn btn-primary">EXPLORE</a>
-                </div>
-
-            </div>
-  </div>
-            
-        
-        </div>
-        <h3 class="text-light text-center">Page</h3>
-    
-        <ul class="pagination justify-content-center">
-               <li class="page-item   mx-3">
-                <a class="page-link text-dark " href="#"> Previous</a>
-            </li>
-             <li class="page-item    mx-3">
-                <a class="page-link text-dark" href="#">1</a>
-            </li>
-              <li class="page-item    mx-3">
-                <a class="page-link text-dark" href="#"> 2</a>
-                </li>
-               <li class="page-item   mx-3">
-                <a class="page-link text-dark " href="#"> 3</a>
-            </li>
-                <li class="page-item mx-3">
-                    <a class="page-link text-dark " href="#"> Next</a>
-                </li>
-        </ul>
+        <a class="carousel-control-prev" href="#demoCarousel" data-slide="prev">
+            <span class=" carousel-control-prev-icon">
+            </span>
+        </a>
+        <a class="carousel-control-next" href="#demoCarousel" data-slide="next">
+            <span class=" carousel-control-next-icon">
+            </span>
+        </a>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
