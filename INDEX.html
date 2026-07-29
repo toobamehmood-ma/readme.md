@@ -10,6 +10,7 @@ https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
             position: relative;
+            min-height: 1000px;
         }
 
         .carousel-item {
@@ -20,10 +21,16 @@ https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
             padding-top: 20px;
 
         }
+        .section{
+            text-align: center;
+            height: 500px;
+            padding-top:100px;
+        margin: 30px;;
+        }
     </style>
 </head>
 
-<body data-spy="scroll">
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
     <div id="demoCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#demoCarousel" data-slide-to="0" class="active"></li>
@@ -33,9 +40,9 @@ https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         </ol>
         <div class="carousel-inner">
 
-            <div class="carousel-item active bg-success">Forest</div>
-            <div class="carousel-item  bg-warning">Desset</div>
-            <div class="carousel-item bg-primary">Ocean</div>
+            <div class="carousel-item active bg-success">🌿Forest</div>
+            <div class="carousel-item  bg-warning">🏜️Dessert</div>
+            <div class="carousel-item bg-primary">🌊Ocean</div>
         </div>
         <a class="carousel-control-prev" href="#demoCarousel" data-slide="prev">
             <span class=" carousel-control-prev-icon">
@@ -45,6 +52,31 @@ https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
             <span class=" carousel-control-next-icon">
             </span>
         </a>
+    </div>
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+         <span class="navbar-brand">Safari</span>
+         <ul class="navbar-nav flex-row">
+            <li class="nav-item text-light"><a class="nav-link mr-3"href="#forest">Forest</a></li>
+
+             <li class="nav-item text-light"><a class="nav-link mr-3"href="#dessert">Dessert</a></li>
+
+             <li class="nav-item text-light"><a class="nav-link mr-3"href="#ocean">Ocean</a></li>  
+         </ul>
+    </nav>
+    <div class="container">
+       
+         <div id="forest" class="section bg-success">
+            <h2>🌿Forest</h2>
+            <p>Explore tigers,lions,and monkeys!</p>
+        </div>
+         <div id="dessert" class="section bg-warning">
+            <h2>🏜️Desset</h2>
+            <p>Meet lizards camels,and foxes. </p>
+        </div>
+         <div id="ocean" class="section bg-primary">
+            <h2>🌊Ocean</h2>
+            <p>Meet sharks,dolphins,and orcas!</p>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
