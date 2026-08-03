@@ -4,28 +4,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Animal Safari</title>
+    <title>My Jungle Explorer</title>
     <link rel="stylesheet" href="
 https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
         body {
             position: relative;
             min-height: 1000px;
+            background-image: radial-gradient(circle, lightblue, skyblue, navy);
         }
 
         .carousel-item {
             height: 100px;
             text-align: center;
             font-weight: bold;
-            font-size: large;
-            padding-top: 20px;
+            font-size: larger;
+            padding-top: 30px;}
+            .carousel-inner {
+            height: 300px;
+        }
+
+        .card {
+            margin-bottom: 30px;
+            height: 100%;
+        }
+
+        #carouselforest {
+            background-image: url(photo-1511497584788-876760111969.avif);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+            text-align: center;
+            padding-top: 100px;
+            color: white;
+            font-weight: bold;
 
         }
-        .section{
+
+        #carousel-mountain {
+            background-image: url(premium_photo-1673240367277-e1d394465b56.avif);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+            text-align: center;
+            padding-top: 100px;
+            color: rgb(241, 241, 247);
+            font-weight: bold;
+
+        }
+
+        #carouselvalley {
+            background-image: url(photo-1531252582519-2d7e6795be96.avif);
+            background-size: cover;
+            background-position: center;
+            min-height: 200px;
+            text-align: center;
+            padding-top: 100px;
+            color: rgb(28, 28, 30);
+            font-weight: bold;
+        }
+
+        .carousel-item {
+            height: 300px;
+        }
+
+        #section {
             text-align: center;
             height: 500px;
-            padding-top:100px;
-        margin: 30px;;
+            padding-top: 100px;
+            margin: 30px;
+            ;
+        }
+
+        #demoCarousel {
+            margin-bottom: 30px;
+        }
+
+        #for {
+            background-image: radial-gradient(circle, rgba(0, 128, 0, 0.8), rgba(35, 51, 35, 0.8));
+            color: white;
+            height: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        #valley {
+            background-image: radial-gradient(circle, rgba(233, 233, 158, 0.8), rgba(203, 228, 93, 0.8));
+            height: 100%;
+            margin-bottom: 30px;;
+            text-align: center;
+            color:rgb(16, 15, 15);
+
+        }
+
+        #mountain {
+            height: 100%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-image: radial-gradient(circle, navy, rgba(0, 0, 128, 0.8));
+
+            text-align: center;
+            color: white;
+
+        }
+
+        .section {
+            padding: 50px 0;
+        }
+        .monkey {
+            padding-top: 20px;
         }
     </style>
 </head>
@@ -33,55 +120,202 @@ https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <body data-spy="scroll" data-target=".navbar" data-offset="70">
     <div id="demoCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
-            <li data-target="#demoCarousel" data-slide-to="0" class="active"></li>
 
+            <li data-target="#demoCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#demoCarousel" data-slide-to="1"></li>
             <li data-target="#demoCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
+            <div class="carousel-item active" id="carouselforest">Forest</div>
 
-            <div class="carousel-item active bg-success">🌿Forest</div>
-            <div class="carousel-item  bg-warning">🏜️Dessert</div>
-            <div class="carousel-item bg-primary">🌊Ocean</div>
+            <div class="carousel-item" id="carouselvalley">Green Valley</div>
+
+            <div class="carousel-item " id="carousel-mountain">Mountain Peak</div>
+            <a class="carousel-control-prev" href="#demoCarousel" data-slide="prev">
+                <span class=" carousel-control-prev-icon">
+                </span>
+            </a>
+            <a class="carousel-control-next" href="#demoCarousel" data-slide="next">
+                <span class=" carousel-control-next-icon">
+                </span>
+            </a>
+
         </div>
-        <a class="carousel-control-prev" href="#demoCarousel" data-slide="prev">
-            <span class=" carousel-control-prev-icon">
-            </span>
-        </a>
-        <a class="carousel-control-next" href="#demoCarousel" data-slide="next">
-            <span class=" carousel-control-next-icon">
-            </span>
-        </a>
+        <nav class="navbar navbar-dark bg-dark sticky-top">
+            <span class="navbar-brand">Jungle Explorer</span>
+            <ul class="navbar-nav flex-row">
+                <li class="nav-item text-light"><a class="nav-link mr-3" href="#for">Forest</a></li>
+
+                <li class="nav-item text-light"><a class="nav-link mr-3" href="#valley">Green Valley</a></li>
+
+                <li class="nav-item text-light"><a class="nav-link mr-3" href="#mountain">Mountain Peak</a></li>
+
+            </ul>
+        </nav>
     </div>
-    <nav class="navbar navbar-dark bg-dark sticky-top">
-         <span class="navbar-brand">Safari</span>
-         <ul class="navbar-nav flex-row">
-            <li class="nav-item text-light"><a class="nav-link mr-3"href="#forest">Forest</a></li>
-
-             <li class="nav-item text-light"><a class="nav-link mr-3"href="#dessert">Dessert</a></li>
-
-             <li class="nav-item text-light"><a class="nav-link mr-3"href="#ocean">Ocean</a></li>  
-         </ul>
-    </nav>
     <div class="container">
-       
-         <div id="forest" class="section bg-success">
-            <h2>🌿Forest</h2>
-            <p>Explore tigers,lions,and monkeys!</p>
-        </div>
-         <div id="dessert" class="section bg-warning">
-            <h2>🏜️Desset</h2>
-            <p>Meet lizards camels,and foxes. </p>
-        </div>
-         <div id="ocean" class="section bg-primary">
-            <h2>🌊Ocean</h2>
-            <p>Meet sharks,dolphins,and orcas!</p>
-        </div>
-    </div>
+        <div class="section text-white">
+            <h2 class="text-center mt-5 mb-4">Welcome to Jungle Explorer</h2>
+            <p class="text-center mb-5">Discover the beauty of nature and explore the wonders of the jungle. From lush
+                forests to breathtaking valleys and majestic mountain peaks, our platform offers a unique experience for
+                nature enthusiasts and adventure seekers alike.</p>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        </div>
+        <div id="for" class="section bg-success">
+            <h1>🌿Forest</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="photo-1545063914-a1a6ec821c88.avif" class="card-img-top" alt="deer" height="200px"
+                            width="auto">
+                        <div class="card-body bg-success" id="for">
+                            <h2 class="card-title">Deer</h2>
+                            <hr class="bg-light">
+                            <p class="card-text">Deer are hoofed mammals belonging to the family Cervidae. They are
+                                known for their agility and graceful movements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="photo-1720217260887-04ab919f613b.avif" class="card-img-top" alt="Birds" height="200px"
+                            width="auto">
+                        <div class="card-body bg-success" id="for">
+                            <h2 class="card-title">Birds</h2>
+                            <hr class="bg-light">
+                            <p class="card-text">Birds are a diverse group of animals characterized by feathers, beaks,
+                                and the ability to fly (in most species).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="photo-1455577380025-4321f1e1dca7.avif" class="card-img-top" alt="river" height="200px"
+                            width="auto">
+                        <div class="card-body bg-success" id="for">
+                            <h2 class="card-title">River</h2>
+                            <hr class="bg-light">
+                            <p class="card-text">Rivers are natural flowing water bodies that play a crucial role in the
+                                ecosystem, providing habitat for various aquatic species.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="photo-1593898797752-756c8a4eb5c0.avif" class="card-img-top" alt="river" height="200px"
+                            width="auto">
+                        <div class="card-body bg-success" id="for">
+                            <h2 class="card-title">Flowers</h2>
+                            <hr class="bg-light">
+                            <p class="card-text">Flowers are the reproductive structures of flowering plants, known for
+                                their beauty and diversity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        </div>
+        <div id="valley" class="section bg-warning">
+            <h1>🏞️Green Valley</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="premium_photo-1661956197580-008967ad1500.avif" class="card-img-top" alt="valley"
+                            height="auto" width="auto">
+                        <div class="card-body" id="valley">
+                            <h2 class="card-title">Valley</h2>
+                            <hr class="bg-dark">
+                            <p class="card-text">A valley is a low area of land between hills or mountains, often with a
+                                river running through it.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="photo-1560664426-3826f58b74cb.avif" class="card-img-top" alt="waterfall" height="auto"
+                            width="auto">
+                        <div class="card-body " id="valley">
+                            <h2 class="card-title">Waterfall</h2>
+                            <hr class="bg-dark">
+                            <p class="card-text">A waterfall is a natural feature where water flows over a vertical drop
+                                or cliff, creating a stunning visual display.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="istockphoto-1409456903-612x612.webp" alt="wildlife" height="auto" width="auto">
+                        <img src="istockphoto-1500238156-612x612.webp" class="monkey" alt="wildlife" height="auto"
+                            width="auto">
+                        <div class="card-body" id="valley">
+                            <h2 class="card-title">Wildlife</h2>
+                            <hr class="bg-dark">
+                            <p class="card-text">Wildlife refers to undomesticated animals and plants that live in their
+                                natural habitats, contributing to biodiversity.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="premium_photo-1664303358547-e2406a9918e8.avif" class="card-img-top" alt="river"
+                            height="auto" width="auto">
+                        <div class="card-body" id="valley">
+                            <h2 class="card-title">Rope Bridge</h2>
+                            <hr class="bg-dark">
+                            <p class="card-text">A rope bridge is a type of bridge that uses ropes or cables as its
+                                primary load-bearing element.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div id="mountain" class="section bg-primary">
+                <h1>🏔️Mountain Peak</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="photo-1733198358459-9c557bdd6349.avif" class="card-img-top" alt="mountain"
+                                height="250px" width="auto">
+                            <div class="card-body " id="mountain">
+                                <h2 class="card-title">Mountain peak</h2>
+                                <hr class="bg-light">
+                                <p class="card-text">A mountain peak is a large landform that rises prominently above
+                                    its surroundings, typically having a peak or summit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="istockphoto-1960538945-612x612.webp" class="card-img-top" alt="mountain"
+                                height="auto" width="auto">
+                            <div class="card-body " id="mountain">
+                                <h2 class="card-title">Climbing</h2>
+                                <hr class="bg-light">
+                                <p class="card-text">Climbing is an activity that involves ascending mountains, cliffs,
+                                    or other vertical surfaces using physical strength and skill.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="photo-1614089916276-eb5be76854bd.avif" class="card-img-top" alt="mountain"
+                                height="auto" width="auto">
+                            <div class="card-body " id="mountain">
+                                <h2 class="card-title">Snow</h2>
+                                <hr class="bg-light">
+                                <p class="card-text">Snow is frozen precipitation that falls from the atmosphere in the
+                                    form of ice crystals, often covering mountainous regions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            </div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
