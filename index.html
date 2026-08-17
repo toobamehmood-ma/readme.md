@@ -1,19 +1,41 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-
-<title>Document Title</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript objects</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 
-<body>
+<body class="bg-dark p-5 text-white text-center">
+    <div class="container">
 
-<h1>Hello, World!</h1>
+        <h1 class="text-white">My phone contact</h1>
+        <p>learning objects in javasript </p>
+        <div class="card-body">
+            <h5>Contact Details</h5>
 
-<p>This is where your main content goes.</p>
+            <p id="name"></p>
+            <p id="phone"></p>
+            <p id="school"></p>
+            <p id="city"></p>
+        </div>
 
+    </div>
+    <script>
+        var contact = {
+            name: "Tooba mehmood",
+            phone: "97352178",
+            school: "Sunrise acadmey",
+            city: "lahore"
+        }
+
+        document.getElementById("name").innerHTML = "Name:" + contact.name;
+        document.getElementById("phone").innerHTML = contact["phone"];
+        document.getElementById("school").innerHTML = "Name:" + contact.school;
+        document.getElementById("city").innerHTML = "Name:" + contact.city;
+    </script>
 </body>
 
-</html>n
+</html>
