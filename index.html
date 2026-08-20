@@ -4,38 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript objects</title>
+    <title>My favourite person profile</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 </head>
 
 <body class="bg-dark p-5 text-white text-center">
     <div class="container">
-
-        <h1 class="text-white">My phone contact</h1>
-        <p>learning objects in javasript </p>
+        <h1>My Favourite Person</h1>
+        <p>Here is the profile of my favourite person:</p>
         <div class="card-body">
-            <h5>Contact Details</h5>
-
+            <h5>Profile Details</h5>
             <p id="name"></p>
-            <p id="phone"></p>
-            <p id="school"></p>
+            <p id="age"></p>
             <p id="city"></p>
+            <p id="profession"></p>
         </div>
-
     </div>
     <script>
-        var contact = {
-            name: "Tooba mehmood",
-            phone: "97352178",
-            school: "Sunrise acadmey",
-            city: "lahore"
+
+        var favouritePerson = {
+            name: "sara",
+            age: 24,
+            city: "islamabad",
+            profession: "Civil engineer"
         }
 
-        document.getElementById("name").innerHTML = "Name:" + contact.name;
-        document.getElementById("phone").innerHTML = contact["phone"];
-        document.getElementById("school").innerHTML = "Name:" + contact.school;
-        document.getElementById("city").innerHTML = "Name:" + contact.city;
+        document.getElementById("name").innerHTML = "Name: " + favouritePerson.name;
+        document.getElementById("age").innerHTML = "Age: " + favouritePerson.age;
+        document.getElementById("city").innerHTML = "City: " + favouritePerson.city;
+        document.getElementById("profession").innerHTML = "Profession: " + favouritePerson.profession;
+
     </script>
+
 </body>
 
 </html>
