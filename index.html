@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Array in JavaScript</title>
+    <title>JavaScript objects</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-<body>
-    <p id="item"></p>
-    <p id="search"></p>
 
+<body class="bg-dark p-5 text-white text-center">
+    <div class="container">
+
+        <h1 class="text-white">My phone contact</h1>
+        <p>learning objects in javasript </p>
+        <div class="card-body">
+            <h5>Contact Details</h5>
+
+            <p id="name"></p>
+            <p id="phone"></p>
+            <p id="school"></p>
+            <p id="city"></p>
+        </div>
+
+    </div>
     <script>
-        var fruits =["apple", "banana", "orange", "grape", "mango"];
-        document.getElementById("item").innerHTML = fruits[4];
-    fruits.pop();
-document.getElementById("item").innerHTML = fruits;
-    for (var i = 0; i < fruits.length; i++) {
-        if (fruits[i] === "banana"){
-        document.getElementById("search").innerHTML += "banana was found!" ;
-    break;
+        var contact = {
+            name: "Tooba mehmood",
+            phone: "97352178",
+            school: "Sunrise acadmey",
+            city: "lahore"
         }
 
-    }
-
-         var  Randomnumbers = Math.random();
-         document.getElementById("search").innerHTML= Randomnumbers;
-
+        document.getElementById("name").innerHTML = "Name:" + contact.name;
+        document.getElementById("phone").innerHTML = contact["phone"];
+        document.getElementById("school").innerHTML = "Name:" + contact.school;
+        document.getElementById("city").innerHTML = "Name:" + contact.city;
     </script>
-    
 </body>
+
 </html>
