@@ -4,38 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My favourite person profile</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <title>Arrays and Objects in JavaScript</title>
 </head>
 
-<body class="bg-dark p-5 text-white text-center">
-    <div class="container">
-        <h1>My Favourite Person</h1>
-        <p>Here is the profile of my favourite person:</p>
-        <div class="card-body">
-            <h5>Profile Details</h5>
-            <p id="name"></p>
-            <p id="age"></p>
-            <p id="city"></p>
-            <p id="profession"></p>
-        </div>
-    </div>
+<body>
+    <h1>Arrays and Objects in JavaScript</h1>
     <script>
-
-        var favouritePerson = {
-            name: "sara",
-            age: 24,
-            city: "islamabad",
-            profession: "Civil engineer"
+        var students = [
+            { name: "tooba", age: 20 },
+            { name: "sara", age: 22 },
+            { name: "zoya", age: 21 }
+        ];
+        var seasons = ["spring", "summer", "autumn", "winter"];
+        document.write("<h2>Students:</h2>");
+        for (var i = 0; i < students.length; i++) {
+            document.write("<p>Name: " + students[i].name + ", Age: " + students[i].age + "</p>");
         }
 
-        document.getElementById("name").innerHTML = "Name: " + favouritePerson.name;
-        document.getElementById("age").innerHTML = "Age: " + favouritePerson.age;
-        document.getElementById("city").innerHTML = "City: " + favouritePerson.city;
-        document.getElementById("profession").innerHTML = "Profession: " + favouritePerson.profession;
+        document.write("<h2>Seasons:</h2>");
+        for (var j = 0; j < seasons.length; j++) {
+            document.write("<p>" + seasons[j] + "</p>");
+        }
+
 
     </script>
+
 
 </body>
 
